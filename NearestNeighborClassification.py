@@ -8,15 +8,14 @@ import random
 
 # FUNCTIONS
 def openckdfile():
+    #unpack=True makes each column an array
     glucose, hemoglobin, classification = np.loadtxt('ckd.csv', delimiter=',', skiprows=1, unpack=True)
     return glucose, hemoglobin, classification
 
 
-
-
-
 # MAIN SCRIPT
 glucose, hemoglobin, classification = openckdfile()
+
 
 plt.figure()
 plt.plot(hemoglobin[classification==1],glucose[classification==1], "k.", label = "Class 1")
@@ -25,3 +24,13 @@ plt.xlabel("Hemoglobin")
 plt.ylabel("Glucose")
 plt.legend()
 plt.show()
+
+
+
+
+
+
+
+
+
+
