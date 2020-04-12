@@ -102,7 +102,7 @@ testcase()
 graphdata(glucose, hemoglobin, classification)
 graphtestcase(newglucose,newhemoglobin, glucose, hemoglobin, classification)
 print(nearestneighborclassifier(newglucose, newhemoglobin, glucose, hemoglobin, classification))
-print(knearestneighborclassifier(5, newglucose, newhemoglobin, glucose, hemoglobin, classification))
+print(knearestneighborclassifier(15, newglucose, newhemoglobin, glucose, hemoglobin, classification))
 
 
 
