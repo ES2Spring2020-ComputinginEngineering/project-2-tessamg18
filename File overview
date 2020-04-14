@@ -1,0 +1,22 @@
+FILE OVERVIEW:
+
+This repository includes several files. 
+
+The README.md file is an overview of all of the function included in this repository. 
+Before testing code, this file should be read in order to understand the basic gist
+of each custom function. 
+
+The ckd.csv is a file with data inside of it. 
+It has hemoglobin and glucose levels along with the known classification. This is the training set
+that will be used for all of the following files.
+
+The nearestneighborsclassification.py contains code to run nearest neighbors algorithm, 
+as well as K-nearest neighbors. It contains both custom functions and main script. 
+
+The kmeansclustering_functions.py contains custom functions that are intended to run a 
+k-means clustering algorithm. A general overview of the functions in this file is provided
+in the README.md file mentioned above. This file is meant to be used in tandem with 
+the following file:
+
+Kmeansclustering_driver.py. This file is the main script for the k-means clustering algorithm. 
+It imports all of the functions from kmeansclustering_functions. 
