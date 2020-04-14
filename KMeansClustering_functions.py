@@ -3,7 +3,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import random
-import statistics
 
 
 def openckdfile():
@@ -87,3 +86,8 @@ def graphingKMeans(glucose, hemoglobin, assignments, centroids):
     plt.ylabel("Glucose")
     plt.legend()
     plt.show()
+
+
+glucose, hemoglobin, classification = openckdfile()
+hscaled = (hemoglobin-3.1)/(17.8-3.1)
+gscaled = (glucose-70)/(490-70)

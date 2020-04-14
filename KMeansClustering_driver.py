@@ -10,7 +10,7 @@ hscaled = (hemoglobin-3.1)/(17.8-3.1)
 gscaled = (glucose-70)/(490-70)
 
 
-centroids = kmc.select(2)
+centroids = kmc.select(3)
 assignments = kmc.assign(centroids, hscaled, gscaled)
 updated_centroids = kmc.update(assignments, hscaled, gscaled, centroids)
 final_centroids = kmc.iterate(50, assignments, hscaled, gscaled, centroids)
