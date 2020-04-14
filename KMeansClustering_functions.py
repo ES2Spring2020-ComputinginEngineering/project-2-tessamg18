@@ -15,7 +15,7 @@ def openckdfile():
 
 
 def select(K):
-#The purpose of this function is to randomly select a K numbers between 0.0 and 1.0.
+#The purpose of this function is to randomly select K numbers between 0.0 and 1.0.
 #It takes the parameter K, which the quantity of numbers you want to get
 #these values are the initial centroids, and the function returns the random value
     return np.random.random((K, 2))
